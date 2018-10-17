@@ -829,7 +829,7 @@ pathToRegexp_1.tokensToRegExp = tokensToRegExp_1;
   Page.prototype._onpopstate = (function () {
     var loaded = false;
     if ( ! hasWindow ) {
-      return function() {};
+      return;
     }
     if (hasDocument && document.readyState === 'complete') {
       loaded = true;
@@ -1186,7 +1186,9 @@ pathToRegexp_1.tokensToRegExp = tokensToRegExp_1;
 
   var globalPage = createPage();
   var page_js = globalPage;
-  page.default = globalPage;
+  var default_1 = globalPage;
+
+page_js.default = default_1;
 
 return page_js;
 

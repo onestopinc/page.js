@@ -400,7 +400,7 @@ pathToRegexp_1.tokensToRegExp = tokensToRegExp_1;
    * Module dependencies.
    */
 
-
+  
 
   /**
    * Short-cuts for global-object checks
@@ -1180,6 +1180,8 @@ pathToRegexp_1.tokensToRegExp = tokensToRegExp_1;
 
   var globalPage = createPage();
   var page_js = globalPage;
-  page.default = globalPage;
+  var default_1 = globalPage;
+
+page_js.default = default_1;
 
 export default page_js;
